@@ -74,10 +74,10 @@ header {
 }
 
 main {
-  background: url(/img/movie.jpg) no-repeat center center/cover;
+  background: url(/img/movie2.png) no-repeat center center/cover;
   background-attachment: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -96,23 +96,15 @@ main {
   }
 
   .movie-info {
-    background-color: rgba($color: #000000, $alpha: 0.7);
+    // background-color: rgba($color: #000000, $alpha: 0.7);
     padding: 5px;
-    border-radius: 0 50px 50px 0  ;
+    // border-radius: 0 50px 50px 0  ;
     color: #eee;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    max-height: 100%;
-    transform: translateX(-101%);
-    transition: transform 0.3s ease-in;
-    
 
     h3 {
       margin-top: 0;
@@ -157,5 +149,15 @@ main {
     transform: translateY(0);
   }
 
+}
+
+@media (max-width: 650px) {
+  header {
+    justify-content: flex-end;
+
+    .logo {
+      display: none;
+    }
+  }
 }
 
