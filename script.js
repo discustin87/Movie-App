@@ -40,8 +40,7 @@ function showMovies(movies) {
         const movieEL = document.createElement('div');
         movieEL.classList.add('movie');
         
-        movieEL.innerHTML = ` <div class="movie">
-                                <img src="${IMG_PATH + poster_path}" alt="${title}">
+        movieEL.innerHTML = `<img src="${IMG_PATH + poster_path}" alt="${title}">
                                 <div class="movie-info">
                                     <h3>${title}</h3>
                                     <span class="${getClassByRate(vote_average)}">${vote_average}</span>
